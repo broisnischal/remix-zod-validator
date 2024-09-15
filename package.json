@@ -9,14 +9,16 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
-    "release": "pnpm run lint && pnpm run build && changeset publish",
+    "test": "vitest run",
+    "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish",
     "changelog": "changeset changelog",
     "patch": "pnpm run release --patch",
     "minor": "pnpm run release --minor",
     "major": "pnpm run release --major",
     "prepack": "pnpm run lint && pnpm run build",
     "vscode:prepublish": "pnpm run build",
-    "cs": "pnpm changeset"
+    "cs": "pnpm changeset",
+    "watch": "pnpm run build --watch"
   },
   "keywords": [],
   "license": "ISC",
