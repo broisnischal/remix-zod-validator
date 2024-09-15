@@ -31,4 +31,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
-          publish: pnpm run build
+          publish: pnpm run release
+
+      - name: Publish to npmjs
+        if: steps.changesets.outputs.published == 'true'
+        run: pnpm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
