@@ -4,12 +4,16 @@
   "description": "A simple zod validator for remix.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "tsup": "^8.2.4",
     "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "zod": "^3.23.8"
   }
 }
