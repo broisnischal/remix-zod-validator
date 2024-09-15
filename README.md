@@ -1,5 +1,8 @@
 # Remix Zod Validator
 
+### Project is still underdevelopment! I recommend don't use in production project!
+
+
 A simple zod validator for remix.
 
 ## Installation
