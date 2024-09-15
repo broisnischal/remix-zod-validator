@@ -1,5 +1,11 @@
 # remix-zod-validator
 
+## 0.0.3
+
+### Patch Changes
+
+- 7a1ac73: init-infra
+
 ## 0.0.2
 
 ### Patch Changes
