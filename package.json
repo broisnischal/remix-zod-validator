@@ -18,7 +18,10 @@
     "prepack": "pnpm run lint && pnpm run build",
     "vscode:prepublish": "pnpm run build",
     "cs": "pnpm changeset",
-    "watch": "pnpm run build --watch"
+    "watch": "pnpm run build --watch",
+    "link": "pnpm link --global remix-zod-validator",
+    "unlink": "pnpm unlink --global remix-zod-validator",
+    "link-cli": "pnpm run unlink && pnpm run link"
   },
   "keywords": [],
   "license": "ISC",
