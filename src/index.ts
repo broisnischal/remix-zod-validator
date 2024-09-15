@@ -6,10 +6,6 @@ const zValidator = (args: { schema: ZodSchema }) => {
 
     const parsed = args.schema.safeParse(formData);
 
-            // if (!parsed.success) {
-            //   return json({ errors: parsed.error.flatten() }, { status: 400 });
-            // } 
-
     return parsed.data;
   };
 };
