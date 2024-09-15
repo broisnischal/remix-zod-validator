@@ -2,8 +2,8 @@ name: Publish
 
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
