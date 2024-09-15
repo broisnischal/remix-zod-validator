@@ -1,5 +1,11 @@
 # remix-zod-validator
 
+## 0.0.4
+
+### Patch Changes
+
+- 7c48ad9: validatoe
+
 ## 0.0.3
 
 ### Patch Changes
