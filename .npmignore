@@ -6,3 +6,6 @@ src
 pnpm-lock.yaml
 tsconfig.json
 vite.config.ts
+test
+node_modules
+pnpm-lock.yaml

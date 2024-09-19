@@ -23,14 +23,15 @@
     "unlink": "pnpm unlink --global remix-zod-validator",
     "link-cli": "pnpm run unlink && pnpm run link"
   },
-  "keywords": [],
-  "license": "ISC",
   "devDependencies": {
     "@changesets/cli": "^2.27.8",
     "tsup": "^8.2.4",
     "typescript": "^5.6.2",
-    "vitest": "^2.1.1"
+    "vitest": "^2.1.1",
+    "@sinclair/typebox": "0.33.12"
   },
+  "keywords": [],
+  "license": "ISC",
   "peerDependencies": {
     "zod": "^3.23.8"
   },
